@@ -112,9 +112,43 @@
       }
     }
   }
+
+
   .content {
     width: 80%;
     margin: 50px auto;
+    h2 {
+      font-family: 'Proxima';
+      font-size: 2em;
+      padding-bottom: 1em;
+    }
+    .courseDescription {
+      display: flex;
+      justify-content: space-between;
+      .aboutCourse {
+        box-sizing: border-box;
+        font-family: 'Roboto';
+        width: 30%;
+        border: 3px solid violet;
+        border-image: url(../img/Background-01.svg) 30 stretch;
+        min-height: 300px;
+        display: flex;
+        &:hover {
+          background-image: url(../img/Background-01.svg);
+          background-size: cover;
+          border: 0;
+          color: white;
+          cursor: pointer;
+        }
+        .courseInfo {
+          margin: auto;
+          text-align: center;
+          .courseName {
+            padding-bottom: 0.5em;
+          }
+        }
+      }
+    }
     .aboutClass {
       width: 100%;
       min-height: 300px;
@@ -280,6 +314,19 @@
     .content {
       width: 100%;
       margin: 50px auto;
+      h2 {
+        width: 80%;
+        margin: auto;
+      }
+      .courseDescription {
+        display: block;
+        width: 80%;
+        margin: auto;
+        .aboutCourse {
+          width: 100%;
+          margin-bottom: 50px;
+        }
+      }
       .aboutClass {
         width: 100%;
         min-height: 300px;

@@ -107,6 +107,32 @@
   .page .content {
     width: 80%;
     margin: 50px auto; }
+    .page .content h2 {
+      font-family: 'Proxima';
+      font-size: 2em;
+      padding-bottom: 1em; }
+    .page .content .courseDescription {
+      display: flex;
+      justify-content: space-between; }
+      .page .content .courseDescription .aboutCourse {
+        box-sizing: border-box;
+        font-family: 'Roboto';
+        width: 30%;
+        border: 3px solid violet;
+        border-image: url(../img/Background-01.svg) 30 stretch;
+        min-height: 300px;
+        display: flex; }
+        .page .content .courseDescription .aboutCourse:hover {
+          background-image: url(../img/Background-01.svg);
+          background-size: cover;
+          border: 0;
+          color: white;
+          cursor: pointer; }
+        .page .content .courseDescription .aboutCourse .courseInfo {
+          margin: auto;
+          text-align: center; }
+          .page .content .courseDescription .aboutCourse .courseInfo .courseName {
+            padding-bottom: 0.5em; }
     .page .content .aboutClass {
       width: 100%;
       min-height: 300px;
@@ -233,6 +259,16 @@
     .page .content {
       width: 100%;
       margin: 50px auto; }
+      .page .content h2 {
+        width: 80%;
+        margin: auto; }
+      .page .content .courseDescription {
+        display: block;
+        width: 80%;
+        margin: auto; }
+        .page .content .courseDescription .aboutCourse {
+          width: 100%;
+          margin-bottom: 50px; }
       .page .content .aboutClass {
         width: 100%;
         min-height: 300px;
